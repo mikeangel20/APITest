@@ -24,7 +24,7 @@ public class ApiDemo {
         return clienteService.getAllUser();
     }
 
-    @GetMapping("/findOneClient{id}")
+    @GetMapping("/findOneClient/{id}")
     public Optional<Cliente> getClienteById(@PathVariable("id") int id) {
         return clienteService.getUserById(id);
     }
